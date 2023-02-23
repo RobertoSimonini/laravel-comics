@@ -1,0 +1,32 @@
+header {
+    padding: 0 12.5%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: 75px;
+    }
+
+    ul {
+        display: flex;
+        li {
+            margin: 0 1rem;
+            a {
+                font-size: 12.5px;
+                text-transform: uppercase;
+                color: black;
+            }
+        }
+    }
+}
+
+ul li a:hover {
+    color: dodgerblue;
+}
+
+.active {
+    text-decoration: underline dodgerblue;
+    color: dodgerblue;
+}

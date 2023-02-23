@@ -10,6 +10,20 @@
 
 </head>
 <body>
-    
+    <header>
+        {{-- logo DC  --}}
+        <figure>
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
+        </figure>
+
+        {{-- Qui metto la navbar con i relativi link  --}}
+        <nav>
+            <ul>
+                <li>
+                    <a href=""></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
