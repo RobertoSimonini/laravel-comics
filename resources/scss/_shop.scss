@@ -1,0 +1,37 @@
+#shop {
+    position: relative;
+    z-index: 1;
+    height: 200px;
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            img {
+                cursor: pointer;
+                height: 75px;
+                padding-right: 10px;
+            }
+
+            a:hover {
+                color: blanchedalmond;
+            }
+        }
+
+    }
+    
+}
