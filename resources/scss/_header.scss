@@ -1,32 +1,56 @@
 header {
-    padding: 0 12.5%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+    .header-top {
+        height: 25px;
+        background-color: dodgerblue;
+        color: white;
+        padding: 0 12.5%;
 
-    img {
-        height: 75px;
-    }
-
-    ul {
-        display: flex;
-        li {
-            margin: 0 1rem;
-            a {
-                font-size: 12.5px;
-                text-transform: uppercase;
-                color: black;
+        ul {
+            display: flex;
+            margin: 0;
+            justify-content: flex-end;
+            li {
+                a {
+                    color: white;
+                    margin-right: 3rem;
+                }
             }
         }
     }
+    
+    .header-bottom {
+        padding: 0 12.5%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        img {
+            height: 75px;
+        }
+        ul {
+            display: flex;
+            li {
+                margin: 0 1rem;
+                a {
+                    font-size: 20.5px;
+                    text-transform: uppercase;
+                    color: black;
+                    
+                    &:hover {
+                        color: dodgerblue;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .active {
+        text-decoration: underline dodgerblue;
+        color: dodgerblue;
+    }
+
 }
 
-ul li a:hover {
-    color: dodgerblue;
-}
-
-.active {
-    text-decoration: underline dodgerblue;
-    color: dodgerblue;
-}
