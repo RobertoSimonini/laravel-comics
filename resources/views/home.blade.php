@@ -23,6 +23,7 @@
             </ul>
         </div>
         
+        {{-- Qui metto la parte inferiore dell'header  --}}
         <div class="header-bottom">
             {{-- logo DC  --}}
             <figure>
@@ -66,5 +67,13 @@
             </nav>
         </div>
     </header>
+
+    {{-- Qui metto il Jumbotron  --}}
+    <section id="jumbotron">
+        <button class="current-series">
+            <strong>CURRENT SERIES</strong> 
+        </button>
+    </section>
+
 </body>
 </html>
