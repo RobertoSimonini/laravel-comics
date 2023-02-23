@@ -1,0 +1,92 @@
+footer {
+    height: 600px;
+    background-image: url(../img/footer-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav {
+    display: flex;
+    width: 50%;
+    padding: 4rem 0;
+
+        * {   
+            flex-basis: calc(100% / 3)
+        }
+
+
+        ul {
+            padding: 1rem 0;
+            h2 {
+                color: white;
+                padding: 0;
+            }
+            li a {
+                color: gray;
+                line-height: 25px;
+            }
+
+            li a:hover {
+                color: white;
+                line-height: 25px;
+            }
+        }
+
+        
+}
+
+.big-logo {
+    height: 750px;
+}
+
+#footer-bottom {
+    position: relative;
+    z-index: 1;
+    padding: 0 12.5%;
+    height: 150px;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+        border: 1px solid dodgerblue;
+        background-color: transparent;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.25s;
+
+        &:hover {
+            transform: scale(1.10);
+
+        }
+    }
+}
+
+.social-medias {
+    color: dodgerblue;
+    display: flex;
+    align-items: center;
+    ul {
+        display: flex;
+       
+    }
+
+    ul > * {
+        margin: 0 0.5rem;
+        transition: 0.25s;
+
+        &:hover {
+            transform: scale(1.25);
+        }
+    }
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0.5rem;
+}
