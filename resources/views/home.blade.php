@@ -75,5 +75,22 @@
         </button>
     </section>
 
+    {{-- Qui metto il main con tutti i fumetti  --}}
+    <main>
+        <div class="card-container">
+            {{-- Qui ciclo in tutte le card  --}}
+            @foreach ($cards as $card)
+                <div class="card">
+                    <div class="comic-card">
+                        <img :src="{{ $card['thumb'] }}" :alt="card.series">
+                        <h4>{{ $card['series'] }} </h4>
+                    </div>
+                </div>
+            @endforeach 
+            
+            <button class="btn-blue">Load more</button>
+        </div>
+    </main>
+
 </body>
 </html>
