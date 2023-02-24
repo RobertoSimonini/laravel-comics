@@ -82,7 +82,7 @@
             @foreach ($cards as $card)
                 <div class="card">
                     <div class="comic-card">
-                        <img :src="{{ $card['thumb'] }}" :alt="card.series">
+                        <img src="{{ $card['thumb'] }}" :alt="card.series">
                         <h4>{{ $card['series'] }} </h4>
                     </div>
                 </div>
@@ -140,6 +140,7 @@
                         @endforeach
                     </ul>
             
+                    {{-- Lista dello shop  --}}
                     <ul>
                         <h2>
                             SHOP
@@ -152,7 +153,8 @@
                         </li>
                     </ul>
                 </div>
-    
+
+                {{-- lista dei terms  --}}
                 <div class="dc-terms">
                     <ul>
                         <h2>
@@ -166,6 +168,7 @@
                     </ul>
                 </div>
     
+                {{-- lista dei siti  --}}
                 <div class="sites">
                     <ul>
                         <h2>
@@ -181,7 +184,7 @@
             </nav>
 
             <figure>
-                {{-- <img class="big-logo" src="../assets/img/dc-logo-bg.png" alt=""> --}}
+                <img class="big-logo" src="{{ Vite::asset('resources/img/dc-logo-bg.png')}}" alt="">
             </figure>
         </div>
     </footer>
