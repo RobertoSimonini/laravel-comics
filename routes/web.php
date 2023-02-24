@@ -264,5 +264,5 @@ Route::get('/', function () {
         'DC Power Visa'
     ];
 
-    return view('home', compact('cards', 'dc_comics', 'terms', 'sites'));
-});
+    return view('main', compact('cards', 'dc_comics', 'terms', 'sites'));
+})->name('main');
